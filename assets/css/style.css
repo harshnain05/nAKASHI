@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@100..900&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/reality-hyper');
+
+.hyper {
+    font-family: 'Reality Hyper', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    font-family: "Lexend Deca", sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.grid::-webkit-scrollbar {
+display: none;
+  }
+  .slider-bg{
+background-image: url("../image/png/sliders-bg.png");
+background-repeat: no-repeat;
+background-size: cover;
+  }
+.video{
+    background-image: url("../image/png/video-img.png");
+}
+.body-bg{
+    background-image: url("/assets/image/png/body-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.acc-bg{
+    background-image: url("/assets/image/png/acc--bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.hero-sm{
+    background-image: url("../image/png/sm-hero-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.founder{
+    max-width: 267px;
+  }
+
+  .slick-track{
+    display: flex !important;
+    gap: 24px !important;
+  }
+@media(max-width:640.99px){
+    .founder{
+      max-width: 245px;
+    }
+  }
+.hero-bg {
+    background-repeat: no-repeat;
+    background-image: url("../image/png/Hero-bgg.png");
+    background-size: cover;
+}
+.about-bg{
+    background-image: url("../image/png/2nd-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover; 
+}
+
+.white-bg{
+    background-image: url("/assets/image/png/white-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.footer-bg{
+    background-image: url("../image/png/footer-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.animate-spin{
+    animation:spin 20s linear infinite !important;
+}
+.bg-lst{
+    background-image: url("../image/png/lst-2nd-bg.png");
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.animate-slide {
+    animation: slide 30s linear infinite;
+}
+.animate-slide:hover{
+    animation-play-state: paused;
+}
+
+.animate-slideRTL {
+    animation: slideRTL 30s linear infinite;
+}
+.animate-slideRTL:hover {
+    animation-play-state: paused;
+}
+
+@keyframes slideRTL {
+    0% {
+        transform: translateX(-50%);
+    }
+
+    100% {
+        transform: translateX(0%);
+    }
+}
+
+
+@keyframes slide {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}

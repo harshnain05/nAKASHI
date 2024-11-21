@@ -1,0 +1,880 @@
+<!doctype html>
+<html lang="en">
+
+    <head>
+        <script src="https://cdn.tailwindcss.com"></script>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <link rel="icon" href="./assets/img/webp/fav-icon-img.png">
+        <title>Nakashi</title>
+        <link rel="stylesheet" href="./assets/css/style.css">
+        <script>
+
+            tailwind.config = {
+                theme: {
+                    container: {
+                        center: true,
+                        screens: {
+                            sm: "640px",
+                            md: "768px",
+                            lg: "1024px",
+                            xl: "1140px",
+                        },
+                    },
+                    extend: {
+                        fontSize: {
+                        },
+                        fontFamily: {
+                        },
+                        colors: {
+                        },
+                        boxShadow: {
+
+                        },
+                        backgroundImage: {
+
+                        },
+                        background: {
+
+                        }
+                    }
+                }
+            }
+        </script>
+    </head>
+
+    <body class="w-full">
+        <!-- ==============================nav bar====================================== -->
+        <section
+            class="flex justify-center bg-cover bg-no-repeat bg-top lg:bg-left max-sm:bg-bottom lg:bg-[url('./assets/image/png/hero-bgg.png')] max-lg:bg-[url('./assets/image/png/sm-hero-bg.png')]">
+            <div class="container">
+                <nav class="pt-[48px] pb-[3px] !flex justify-between  max-xl:px-8">
+                    <a href="/" class="flex justify-center z-[51]"><img src="./assets/image/svg/nAKASHI-logo.svg"
+                            alt="logo"></a>
+                    <div
+                        class="gap-[40px] flex flex-col menulist duration-300 items-center ease-linear text-white w-full -right-full min-h-screen z-50 fixed top-0 lg:relative lg:min-h-fit lg:w-fit lg:flex-row lg:right-0 lg:pt-0 pt-[200px]  backdrop-blur-[40px] lg:bg-transparent">
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            ABOUT</a>
+                        <a href="/"
+                            class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                            CHARACTER</p>
+                            <a href="/"
+                                class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                                GALLERY</a>
+                            <a href="/"
+                                class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                                HOW IT WORKS</a>
+                            <a href="/"
+                                class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                                ROADMAP</a>
+                            <a href="/"
+                                class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                                TEAM</a>
+                            <a href="/"
+                                class="cursor-pointer relative after:absolute after:bottom-0 after:left-[50%] after:translate-x-[-50%] after:h-0.5 after:w-0 after:bg-white after:transition-all after:duration-200 hover:after:w-full text-[13px] tracking-[8%]">
+                                FAQ</a>
+                            <div class="flex lg:hidden gap-4">
+                                <a href="/"
+                                    class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                        src="./assets/image/svg/tele.svg" alt="telegram icon"></a>
+                                <a href="/"
+                                    class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                        src="./assets/image/svg/discord.svg" alt="telegram icon"></a>
+                                <a href="/"
+                                    class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                        src="./assets/image/svg/twiter.svg" alt="telegram icon"></a>
+                                <a href="/"
+                                    class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                        src="./assets/image/svg/landmark.svg" alt="telegram icon"></a>
+                            </div>
+                    </div>
+                    <div class="flex justify-center  z-[51] relative lg:hidden">
+                        <div class="flex flex-col lg:hidden menubar justify-between w-8 h-4">
+                            <span
+                                class="w-[22px] h-0.5 flex rounded-md transition-all duration-500 bg-white menubarFirst origin-right translate-x-[9px]"></span>
+                            <span
+                                class="w-full h-0.5 flex rounded-md transition-all duration-500 bg-white menubarSecond origin-right"></span>
+                        </div>
+                    </div>
+                </nav>
+                <div class="flex flex-wrap max-lg:flex-col-reverse justify-around ">
+                    <div
+                        class="lg:w-5/12 flex items-center flex-col justify-center bg-cover max-lg:bg-[url('./assets/image/webp/hero-sm-bg-img.png')]">
+                        <div class="flex items-center lg:gap-10 xl:translate-x-[-100px]">
+                            <div class="max-w-[72px] flex items-center flex-col">
+                                <p
+                                    class="text-white flex flex-col lg:text-7xl md:text-6xl sm:text-5xl text-4xl mt-24 max-lg:hidden">
+                                    <span>仲</span><span>仕</span>
+                                </p>
+                                <p class="bg-white w-0.5 h-[344px] max-lg:hidden"></p>
+                            </div>
+                            <div class="flex flex-col">
+                                <p
+                                    class="text-sm mb-[29px] tracking-[4%] lg:text-white max-w-[275px] sawarabi-gothic text-center mx-auto lg:mt-0 mt-[100px] ">
+                                    ナカシと彼の友人が彼らの宇宙宇宙をゴバーンから救おうとしている物語</p>
+                                <p class="text-sm lg:text-white mb-[17px] text-center max-w-[327px] mx-auto">The story
+                                    of
+                                    Nakashi and his friends trying to save
+                                    their universe from Gobern</p>
+                                <p class="text-5xl leading-[110%] max-w-[302px] lg:text-white mx-auto text-center">
+                                    4000 Pages Manga NFTs Collections</p>
+                            </div>
+                        </div>
+                        <div class="flex gap-4 mt-12 xl:translate-x-[-100px] max-lg:hidden ">
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/tele.svg" alt="telegram icon"></a>
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/discord.svg" alt="telegram icon"></a>
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/twiter.svg" alt="telegram icon"></a>
+                            <a href="/"
+                                class="bg-[#1B1B1B] p-[14px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                                    src="./assets/image/svg/landmark.svg" alt="telegram icon"></a>
+                        </div>
+
+                    </div>
+                    <div class="lg:w-7/12">
+                        <p class="text-white flex flex-col text-7xl mt-24 lg:hidden max-w-[72px] mb-[-222px]">
+                            <span>仲</span><span>仕</span>
+                        </p>
+                        <img class="lg:mb-[-109px] max-[1024px]:mt-[218px] max-[1024px]:ms-[-51px] max-lg:relative z-10"
+                            src="./assets/image/png/hero-character.png" alt="hero img">
+                    </div>
+                </div>
+            </div>
+
+        </section>
+        <img class="lg:hidden w-full " src="./assets/image/png/low-layer.png" alt="lower layer">
+        <!-- ===============ABOUT=========================== -->
+        <section class="about-bg  min-h-screen flex items-center justify-center">
+            <div class="container">
+                <div class="flex flex-wrap justify-start  items-center">
+                    <div class="lg:w-6/12 flex items-center justify-center ">
+                    </div>
+
+                    <div class="lg:w-6/12 flex pl-[120px] text-left  flex-col">
+                        <p class="text-white max-w-[69px]  pb-[10px]">ABOUT</p>
+                        <p class="text-white font-normal text-[64px] hyper leading-[64px]">NAKASHI
+                            PROJECT</p>
+                        <p class="text-white xl:ms-[60px] mt-[40px] font-light max-w-[388px] text-sm leading-[21px] ">
+                            Lorem
+                            Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                            the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries, but also the leap into electronic
+                            typesetting.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ========================4000========================= -->
+        <section class=" min-h-screen bg-white white-bg">
+            <div class="container mx-auto justify-cente items-center">
+                <div
+                    class="flex max-[1024px]:flex-col-reverse  lg:pt-[160px] pt-[380px]  flex-wrap justify-start  items-center">
+                    <div class="lg:w-6/12  flex pl-[120px] text-left  flex-col">
+                        <p class=" max-w-[69px] lg:mx-0 mx-auto pb-[10px]">PAGES</p>
+                        <p class=" font-normal text-[64px] mx-auto lg:mx-0 hyper leading-[64px]">4000</p>
+                        <p class=" lg:ms-[73px] mt-[40px] font-light max-w-[388px] text-sm leading-[21px] ">Lorem Ipsum
+                            is
+                            simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                            industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book.</p>
+                    </div>
+                    <div class="lg:w-6/12 w-[661px] flex pl-[120px]   flex-col">
+                        <img src="/assets/image/png/scriptsss.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ================================= sliders ======================================== -->
+        <section id="gallery" class=" slider-bg py-[50px]">
+            <div class="container">
+                <div class="flex max-[1024px]:flex-col justify-between items-center mx-auto max-lg:flex-col">
+                    <div class=" mx-auto ms-[100px] text-center max-lg:mb-[50px]  max-lg:w-full w-[572px] bg-no-repeat">
+                        <img class="mt-[100px] max-[1024px]:ms-[100px] max-[1024px]:ms-[10px]   "
+                            src="/assets/image/png/gallery.png" alt="">
+                    </div>
+                    <div class="max-w-[364px]">
+                        <p class="font-semibold text-light-brown text-lg text-end">20 / 100%</p>
+                        <img class="max-w-[364px]" src="/assets/image/png/progress.png" alt="progress-bar">
+                    </div>
+                </div>
+                <p
+                    class="font-light lg:text-2xl text-base  text-center pt-[100px] max-lg:pt-[50px] mb-[50px] max-md:pt-6">
+                    4000 pages of story will be made</p>
+                <div
+                    class=" flex items-center justify-center max-lg:px-4 lg:gap-6 gap-4 mb-[100px] max-lg:mb-14 max-md:mb-9 max-sm:mb-[50px] max-lg:flex-col">
+                    <div
+                        class="border border-solid hover:bg-[#403CFF] hover:text-white  max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <p class=" font-light text-[13px] text-light-brown">Listed</p>
+                        <div class="flex items-center">
+                            <p class="font-semibold text-light-brown text-2xl pr-2">800</p>
+                            <p class=" text-light-brown font-normal text-sm opacity-50">/4000</p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-solid  hover:bg-[#403CFF] hover:text-white max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <p class=" font-light text-[13px] text-light-brown">OWNERS</p>
+                        <div class="flex items-center">
+                            <p class="font-semibold text-light-brown text-2xl ">400</p>
+                        </div>
+                    </div>
+                    <div
+                        class="border border-solid hover:bg-[#403CFF] hover:text-white max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <p class=" font-light text-[13px] text-light-brown">FLOOR PRICE</p>
+                        <div class="flex items-center gap-[10px]">
+                            <img class="max-w-3" src="/assets/image/svg/diamond.svg" alt="etherium-logo">
+                            <p class=" font-semibold text-light-brown text-2xl">0.12 ETH</p>
+                        </div>
+                    </div>
+                    <div
+                        class=" cursor-pointer max-w-[267px] max-h-[100px] flex items-center justify-center flex-col w-full py-[24px] max-md:max-w-none">
+                        <img src="/assets/image/svg/blue-button.svg" alt="">
+                    </div>
+                </div>
+            </div>
+            </div>
+            </div>
+            <div class="flex justify-between ">
+                <div class="overflow-hidden w-full">
+                    <div class="flex animate-slide lg:gap-4 gap-2 ">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="/assets/image/png/page-4.png " alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center">
+                <div class="overflow-hidden w-full mt-[50px] mb-[50px]">
+                    <div class="flex lg:gap-4 gap-2  animate-slideRTL">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-1.png" alt="" class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    </div>
+                </div>
+            </div>
+            <div class="flex justify-center items-center mx-auto gap-24 ">
+                <div class="overflow-hidden slide-scroll  w-full ">
+                    <div class="flex lg:gap-4 gap-2  animate-slide">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-4.png" alt="gallery-page-one"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-5.png" alt="gallery-page-two"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-2.png" alt="gallery-page-three"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/-2-1.png" alt="gallery-page-four"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                        <img src="./assets/image/png/page-3.png" alt="gallery-page-five"
+                            class="lg:h-[480px] lg:max-w-[320px] max-w-32">
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ------------------video--------------------- -->
+        <section
+            class="pt-[100px] max-lg:pt-[50px] max-md:pt-10 max-sm:pt-5 bg-[url('assets/images/png/how-It-works-bg-img.png')] bg-no-repeat bg-cover bg-center relative">
+            <div class="container">
+                <div class="lg:hidden mx-auto w-full max-w-[308px]">
+                    <img src="/assets/image/png/how-work.png" alt="" class="w-full" />
+                </div>
+                <div class="max-lg:hidden bg-[url('assets/images/png/play-bg-img.png')] bg-center bg-no-repeat">
+                    <img class="mx-auto" src="/assets/image/png/how-work.png" alt="">
+                </div>
+                <p
+                    class="text-center font-lexendDeca text-[#222222] font-light text-2xl pt-[100px] max-lg:pt-[50px] max-md:pt-10 max-sm:pt-5">
+                    Mixed reality NFTs project
+                </p>
+                <p
+                    class="text-center font-lexendDeca text-[#222222] max-w-[742px] mx-auto font-light text-sm pt-6 leading-[150%] pb-[50px] max-lg:pb-10 max-md:pb-8 max-sm:pb-5">
+                    Lorem Ipsum is simply dummy text of the printing and typesetting
+                    industry. Lorem Ipsum has been the industry's standard dummy text ever
+                    since the 1500s, when an unknown printer took a galley of type and
+                    scrambled it to make a type specimen book.
+                </p>
+                <div class="flex items-center justify-center flex-col">
+                    <div>
+                        <img src="/assets/image/svg/blue-btn.svg" alt="btn"
+                            class="pointer-events-none cursor-pointer" />
+                    </div>
+                    <div
+                        class="video bg-center bg-no-repeat bg-cover flex items-center justify-center w-full max-w-[1140px] h-[642px] max-md:h-[212px] mb-[210px] max-md:mb-12">
+                        <div id="play-video"
+                            class="w-[64px] h-[64px] cursor-pointer rounded-full bg-[#333333] flex items-center justify-center">
+                            <img src="/assets/image/svg/btn-arrow.svg" alt="play-btn" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <img src="/assets/image/png/video-down-layer.png" alt="layer"
+                class="absolute bottom-0 w-full pointer-events-none" />
+        </section>
+        <!-- =========================roadmap---------------------- -->
+        <section class="bg-black text-white py-16">
+            <div class="container mx-auto px-4">
+                <!-- Header -->
+                <img class="mx-auto sm:max-w-[778px] max-[768px]:w-[350px] " src="/assets/image/svg/roadmap.svg" alt="">
+                <img class="mx-auto animate-spin max-[768px]:w-[350px]" src="/assets/image/png/galaxy.png" alt="">
+                <!-- Roadmap Phases -->
+                <!-- Phase 1 -->
+                <div class=" sm:max-w-[994px] mx-auto mt-10 mb-10">
+                    <div class="max-w-[364px] mx-auto lg:m-0">
+                        <h3 class="text-[13px] leading-4  font-normal ">Phase 1</h3>
+                        <h4 class="text-lg text-white hyper font-normal text-[32px] leading-9 ">Q2 2022</h4>
+                        <p class="text-white font-light text-sm leading-[21px] ">
+                            Lorem ipsum is simply dummy text of the printing and typesetting
+                            industry. Lorem Ipsum has been the industry's standard dummy text
+                            ever since the 1500s.
+                        </p>
+                    </div>
+                </div>
+                <!-- Phase 2 -->
+                <div class=" sm:max-w-[994px] mx-auto mt-10 mb-10">
+                    <div class="max-w-[364px] mx-auto lg:mr-0 lg:ml-auto">
+                        <h3 class="text-[13px] leading-4  font-normal ">Phase 2</h3>
+                        <h4 class="text-lg text-white hyper font-normal text-[32px] leading-9 ">Q3 2022</h4>
+                        <p class="text-white font-light text-sm leading-[21px] ">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries.
+                        </p>
+                    </div>
+                </div>
+                <!-- Phase 3 -->
+                <div class=" sm:max-w-[994px] mx-auto mt-10 mb-10">
+                    <div class="max-w-[364px] mx-auto lg:m-0">
+                        <h3 class="text-[13px] leading-4  font-normal ">Phase 3</h3>
+                        <h4 class="text-lg text-white hyper font-normal text-[32px] leading-9 ">Q4 2022</h4>
+                        <p class="text-white font-light text-sm leading-[21px] ">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                            dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled
+                            it to make a type specimen
+                            book. It has survived not only five centuries.
+                        </p>
+                    </div>
+                </div>
+                <!-- Phase 4 -->
+                <div class=" sm:max-w-[994px] mx-auto mt-10 mb-10">
+                    <div class="max-w-[364px] mx-auto lg:mr-0 lg:ml-auto">
+                        <h3 class="text-[13px] leading-4  font-normal ">Phase 4</h3>
+                        <h4 class="text-lg text-white hyper font-normal text-[32px] leading-9 ">Q1 / Q2 2023</h4>
+                        <p class="text-white font-light text-sm leading-[21px] ">
+                            Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
+                            been the industry's standard
+                            dummy text ever since.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ----------------team------------- -->
+        <section class="bg-black text-white py-16">
+            <div class="container mx-auto px-4">
+                <!-- Section Header -->
+                <img class="mx-auto mb-[100px]" src="/assets/image/png/team.png" alt="">
+                <p class="text-center mb-[100px] text-white font-light text-2xl leading-[30px] ">
+                    See who's behind this cool project
+                </p>
+                <!-- Team Grid -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8">
+                    <!-- Team Member -->
+                    <div class=" p-1 rounded-lg text-center">
+                        <img src="/assets/image/png/1st-crd-img.png" alt="Marco Steen" class=" mx-auto" />
+                        <h3 class="text-xl font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class=" p-1 rounded-lg text-center">
+                        <img src="/assets/image/png/2nd-crd-img.png" alt="Marco Steen" class="mx-auto" />
+                        <h3 class="text-xl font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="p-1 rounded-lg text-center">
+                        <img src="/assets/image/png/3rd-crd.png" alt="Marco Steen" class="mx-auto" />
+                        <h3 class="text-xl font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="p-1 rounded-lg text-center">
+                        <img src="/assets/image/png/4th-crd.png" alt="Marco Steen" class=" mx-auto" />
+                        <h3 class="text-xl font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+                <div class="mx-auto flex gap-5 mt-9">
+                    <!-- Team Member -->
+                    <div class=" p-1 rounded-lg text-center">
+                        <img src="/assets/image/png/5th-crd.png" alt="Marco Steen" class="mx-auto" />
+                        <h3 class="text-xl font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="p-1 rounded-lg text-center">
+                        <img src="/assets/image/png/6th-img.png" alt="Marco Steen" class="mx-auto" />
+                        <h3 class="text-xl  font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                    <!-- Team Member -->
+                    <div class="p-1  text-center">
+                        <img src="/assets/image/png/7th-img.png" alt="Marco Steen" class="mx-auto" />
+                        <h3 class="text-xl font-semibold">Marco Steen</h3>
+                        <p class="text-gray-400 text-sm mb-2">Co-Founder & CEO</p>
+                        <p class="text-gray-500 text-xs">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- ===========================================accordian====================== -->
+        <section class="acc-bg bg-black pt-5 pb-5">
+            <div class="container">
+                <img class="mx-auto mt-[100px] " src="/assets/image/png/FAQ.png" alt="">
+                <div class="faq text-center ">
+                    <h1 class="  my-[100px] font-light text-2xl leading-[30px]  text-white accordion-text-1">Frequently
+                        Asked Question
+                    </h1>
+                </div>
+                <div class="max-w-[752px] mx-auto">
+                    <div class="lg:space-y-5 lg:block hidden space-y-4">
+                        <!-- Accordion Item 1 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item1" class="hidden peer" />
+                            <label for="item1"
+                                class="flex items-center justify-between text-white lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                01 &nbsp; When is the mint date?
+                                <svg width="12" height="9" viewBox="0 0 12 9" fill="none"
+                                    xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M6 9L0.803849 9.28549e-07L11.1962 1.83707e-06L6 9Z" fill="white" />
+                                </svg>
+
+                            </label>
+                            <div
+                                class="peer-checked:block text-white hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 2 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item2" class="hidden peer" checked />
+                            <label for="item2"
+                                class="flex items-center text-white justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                02 &nbsp; How much will each nakashi pages cost?
+                                <svg id="icon2" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block text-white hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 3 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item3" class="hidden peer" />
+                            <label for="item3"
+                                class="flex items-center text-white justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                03 &nbsp; How can I use my NFTs?
+                                <svg id="icon3" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block text-white hidden px-8 py-6 font-light lg:text-sm text-[13px] tracking-[2%] leading-primary text-light-white">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 4 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item4" class="hidden peer" />
+                            <label for="item4"
+                                class="flex items-center text-white justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                04 &nbsp; How to play with real Nakashi manga pages?
+                                <svg id="icon4" class="w-3 h-3 transition-all transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 text-white font-light lg:text-sm text-[13px] tracking-[2%]">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+                        <!-- Accordion Item 5 -->
+                        <div>
+                            <input type="radio" name="accordion" id="item5" class="hidden peer" />
+                            <label for="item5"
+                                class="flex items-center mb-[130px] text-white justify-between lg:py-[21px] py-5 leading-5 lg:px-8 px-4 lg:text-lg text-base font-semibold text-left cursor-pointer peer-checked:text-black text-light-white bg-white bg-opacity-10 hover:bg-opacity-20 border-none outline-none transition-all peer-checked:bg-white peer-checked:bg-opacity-100">
+                                05 &nbsp; How can I use my NFTs?
+                                <svg id="icon5" class="w-3 h-3 transition-all  transform"
+                                    xmlns="http://www.w3.org/2000/svg" width="12" height="9" viewBox="0 0 12 9"
+                                    fill="none">
+                                    <path d="M6 9L0.803849 9.2855e-07L11.1962 1.83707e-06L6 9Z" />
+                                </svg>
+                            </label>
+                            <div
+                                class="peer-checked:block hidden px-8 py-6 text-white font-light lg:text-sm text-[13px] tracking-[2%]">
+                                Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum
+                                has been the industry's standard dummy text ever since the 1500s, when an unknown
+                                printer took a galley of type and scrambled it to make a type specimen book. It has
+                                survived not only five centuries.
+                            </div>
+                        </div>
+
+        </section>
+        
+        <!-- --------------------------------------- -->
+        <section class="flex min-h-screen bg-lst justify-center items-center">
+            <div class="container max-w-[1440px]">
+                <div class="flex flex-wrap">
+                    <div class="lg:w-8/12  w-full">
+                        <img class="sm:mx-auto" src="./assets/image/png/3-character.png" alt="squad-img">
+                    </div>
+                    <div class="lg:w-4/12 w-full justify-center flex flex-col lg:items-start items-center">
+                        <p
+                            class="lg:text-[40px] sm:text-4xl text-[28px] lg:text-start text-center  text-white flex flex-col mb-6 lg:mt-0 mt-[50px]">
+                            <span class="hyper">JOIN NAKASHI</span><span class="hyper">COMMUNITY</span>
+                        </p>
+                        <p
+                            class="text-white sm:max-w-[330px] max-w-[265px] lg:text-start text-center text-base sm:text-lg font-light mb-10">
+                            Be part of our amazing community & stay tuned for the news.</p>
+                        <a href="/">
+                            <svg class="button-hover" width="280" height="64" viewBox="0 0 280 64" fill="none"
+                                xmlns="http://www.w3.org/2000/svg">
+                                <g filter="url(#filter0_b_1_410)">
+                                    <path class="path-white" d="M10 0H280V54L270 64H0V10L10 0Z" fill="#403CFF" />
+                                    <line opacity="0.2" x1="72.5" y1="-2.18557e-08" x2="72.5" y2="64" stroke="white" />
+                                    <g clip-path="url(#clip0_1_410)">
+                                        <path class="path-blue"
+                                            d="M44.317 24.492C42.787 23.802 41.147 23.292 39.432 23.002C39.4167 22.999 39.4009 23.0009 39.3868 23.0074C39.3726 23.0138 39.3608 23.0245 39.353 23.038C39.143 23.407 38.909 23.888 38.745 24.268C36.9261 23.9962 35.0769 23.9962 33.258 24.268C33.0753 23.8468 32.8693 23.4362 32.641 23.038C32.6333 23.0244 32.6215 23.0134 32.6074 23.0066C32.5933 22.9998 32.5775 22.9975 32.562 23C30.848 23.29 29.208 23.8 27.677 24.491C27.6638 24.4965 27.6527 24.5059 27.645 24.518C24.533 29.093 23.68 33.555 24.099 37.961C24.1002 37.9718 24.1035 37.9822 24.1088 37.9917C24.1142 38.0011 24.1214 38.0094 24.13 38.016C25.9464 39.3384 27.9723 40.3458 30.123 40.996C30.138 41.0006 30.154 41.0006 30.169 40.9959C30.184 40.9913 30.1972 40.9822 30.207 40.97C30.669 40.35 31.081 39.695 31.433 39.007C31.454 38.967 31.434 38.919 31.392 38.903C30.746 38.6597 30.1201 38.3661 29.52 38.025C29.5092 38.0188 29.5001 38.0101 29.4935 37.9995C29.487 37.989 29.4831 37.977 29.4823 37.9646C29.4815 37.9522 29.4838 37.9398 29.489 37.9286C29.4942 37.9173 29.5021 37.9075 29.512 37.9C29.638 37.807 29.764 37.71 29.884 37.613C29.8948 37.6042 29.9078 37.5987 29.9216 37.5969C29.9353 37.5952 29.9493 37.5973 29.962 37.603C33.889 39.367 38.142 39.367 42.023 37.603C42.0357 37.5969 42.0498 37.5946 42.0638 37.5961C42.0778 37.5977 42.091 37.6032 42.102 37.612C42.222 37.71 42.347 37.807 42.474 37.9C42.484 37.9073 42.492 37.917 42.4974 37.9282C42.5027 37.9394 42.5052 37.9517 42.5046 37.9641C42.504 37.9765 42.5004 37.9885 42.494 37.9991C42.4876 38.0098 42.4787 38.0186 42.468 38.025C41.87 38.369 41.248 38.66 40.595 38.902C40.585 38.9056 40.5758 38.9113 40.5682 38.9188C40.5606 38.9263 40.5546 38.9353 40.5507 38.9452C40.5468 38.9551 40.5451 38.9658 40.5457 38.9764C40.5463 38.9871 40.5491 38.9975 40.554 39.007C40.914 39.694 41.326 40.348 41.779 40.969C41.7884 40.9817 41.8015 40.9912 41.8166 40.9963C41.8316 41.0013 41.8478 41.0015 41.863 40.997C44.0173 40.3486 46.0466 39.3407 47.865 38.016C47.8739 38.0098 47.8813 38.0017 47.8868 37.9924C47.8923 37.9831 47.8958 37.9727 47.897 37.962C48.397 32.868 47.059 28.442 44.348 24.52C44.3413 24.5072 44.3303 24.4973 44.317 24.492ZM32.02 35.278C30.838 35.278 29.863 34.209 29.863 32.898C29.863 31.586 30.819 30.518 32.02 30.518C33.23 30.518 34.196 31.595 34.177 32.898C34.177 34.21 33.221 35.278 32.02 35.278ZM39.995 35.278C38.812 35.278 37.838 34.209 37.838 32.898C37.838 31.586 38.793 30.518 39.995 30.518C41.205 30.518 42.171 31.595 42.152 32.898C42.152 34.21 41.206 35.278 39.995 35.278Z"
+                                            fill="white" />
+                                    </g>
+                                    <path class="path-blue"
+                                        d="M100.698 39.18C100.242 39.18 99.81 39.126 99.402 39.018C98.994 38.922 98.622 38.778 98.286 38.586C97.95 38.382 97.65 38.142 97.386 37.866C97.122 37.578 96.894 37.26 96.702 36.912L98.448 35.094C98.616 35.346 98.778 35.556 98.934 35.724C99.09 35.88 99.24 36.012 99.384 36.12C99.54 36.228 99.696 36.306 99.852 36.354C100.02 36.402 100.194 36.426 100.374 36.426C100.662 36.426 100.914 36.36 101.13 36.228C101.358 36.084 101.532 35.892 101.652 35.652C101.772 35.412 101.832 35.13 101.832 34.806V29.064H99.528V26.4H106.764V29.064H104.82V35.166C104.82 35.778 104.712 36.33 104.496 36.822C104.292 37.314 104.004 37.74 103.632 38.1C103.26 38.448 102.822 38.718 102.318 38.91C101.826 39.09 101.286 39.18 100.698 39.18ZM114.752 39.18C113.792 39.18 112.916 39.018 112.124 38.694C111.332 38.37 110.642 37.914 110.054 37.326C109.466 36.738 109.01 36.048 108.686 35.256C108.362 34.464 108.2 33.594 108.2 32.646C108.2 31.698 108.362 30.828 108.686 30.036C109.01 29.244 109.466 28.554 110.054 27.966C110.642 27.378 111.332 26.922 112.124 26.598C112.916 26.274 113.786 26.112 114.734 26.112C115.682 26.112 116.552 26.274 117.344 26.598C118.136 26.922 118.826 27.378 119.414 27.966C120.002 28.554 120.452 29.244 120.764 30.036C121.088 30.828 121.25 31.698 121.25 32.646C121.25 33.582 121.088 34.452 120.764 35.256C120.452 36.048 120.002 36.738 119.414 37.326C118.826 37.914 118.136 38.37 117.344 38.694C116.552 39.018 115.688 39.18 114.752 39.18ZM114.734 36.3C115.226 36.3 115.676 36.21 116.084 36.03C116.504 35.85 116.864 35.598 117.164 35.274C117.476 34.938 117.716 34.548 117.884 34.104C118.052 33.66 118.136 33.174 118.136 32.646C118.136 32.118 118.052 31.632 117.884 31.188C117.716 30.744 117.476 30.36 117.164 30.036C116.864 29.7 116.504 29.442 116.084 29.262C115.676 29.082 115.226 28.992 114.734 28.992C114.242 28.992 113.786 29.082 113.366 29.262C112.958 29.442 112.598 29.7 112.286 30.036C111.974 30.36 111.734 30.744 111.566 31.188C111.41 31.632 111.332 32.118 111.332 32.646C111.332 33.174 111.41 33.666 111.566 34.122C111.734 34.566 111.974 34.95 112.286 35.274C112.598 35.598 112.958 35.85 113.366 36.03C113.786 36.21 114.242 36.3 114.734 36.3ZM123.102 39V36.426H125.226V28.974H123.102V26.4H130.428V28.974H128.286V36.426H130.428V39H123.102ZM133.338 39V26.4H136.074L142.68 35.4L142.086 35.31C142.026 34.914 141.978 34.536 141.942 34.176C141.906 33.816 141.87 33.462 141.834 33.114C141.81 32.766 141.786 32.412 141.762 32.052C141.75 31.692 141.738 31.302 141.726 30.882C141.726 30.462 141.726 30.006 141.726 29.514V26.4H144.696V39H141.924L135.03 29.712L135.948 29.838C136.008 30.414 136.056 30.906 136.092 31.314C136.14 31.71 136.176 32.064 136.2 32.376C136.236 32.688 136.26 32.97 136.272 33.222C136.284 33.474 136.29 33.726 136.29 33.978C136.302 34.218 136.308 34.488 136.308 34.788V39H133.338ZM153.623 39V26.4H158.897C159.821 26.4 160.667 26.556 161.435 26.868C162.203 27.168 162.863 27.6 163.415 28.164C163.979 28.728 164.411 29.394 164.711 30.162C165.011 30.93 165.161 31.776 165.161 32.7C165.161 33.624 165.011 34.476 164.711 35.256C164.411 36.024 163.979 36.69 163.415 37.254C162.863 37.806 162.203 38.238 161.435 38.55C160.667 38.85 159.821 39 158.897 39H153.623ZM156.683 36.912L156.269 36.3H158.807C159.311 36.3 159.761 36.216 160.157 36.048C160.553 35.868 160.889 35.622 161.165 35.31C161.453 34.998 161.675 34.62 161.831 34.176C161.987 33.732 162.065 33.24 162.065 32.7C162.065 32.16 161.987 31.668 161.831 31.224C161.675 30.78 161.453 30.402 161.165 30.09C160.889 29.778 160.553 29.538 160.157 29.37C159.761 29.19 159.311 29.1 158.807 29.1H156.215L156.683 28.524V36.912ZM167.012 39V36.426H169.136V28.974H167.012V26.4H174.338V28.974H172.196V36.426H174.338V39H167.012ZM181.424 39.18C180.596 39.18 179.846 39.084 179.174 38.892C178.514 38.688 177.926 38.4 177.41 38.028C176.894 37.644 176.432 37.194 176.024 36.678L177.878 34.572C178.478 35.376 179.078 35.916 179.678 36.192C180.29 36.468 180.92 36.606 181.568 36.606C181.892 36.606 182.186 36.564 182.45 36.48C182.714 36.396 182.918 36.276 183.062 36.12C183.206 35.952 183.278 35.748 183.278 35.508C183.278 35.328 183.23 35.166 183.134 35.022C183.05 34.878 182.93 34.752 182.774 34.644C182.618 34.536 182.432 34.44 182.216 34.356C182 34.26 181.772 34.182 181.532 34.122C181.292 34.05 181.046 33.99 180.794 33.942C180.098 33.786 179.492 33.594 178.976 33.366C178.46 33.138 178.028 32.862 177.68 32.538C177.344 32.202 177.092 31.824 176.924 31.404C176.756 30.972 176.672 30.492 176.672 29.964C176.672 29.4 176.798 28.884 177.05 28.416C177.314 27.936 177.662 27.528 178.094 27.192C178.538 26.844 179.048 26.58 179.624 26.4C180.2 26.208 180.8 26.112 181.424 26.112C182.252 26.112 182.96 26.202 183.548 26.382C184.148 26.55 184.658 26.796 185.078 27.12C185.51 27.444 185.876 27.834 186.176 28.29L184.286 30.108C184.034 29.796 183.758 29.538 183.458 29.334C183.17 29.13 182.858 28.974 182.522 28.866C182.198 28.758 181.862 28.704 181.514 28.704C181.154 28.704 180.842 28.752 180.578 28.848C180.326 28.932 180.128 29.058 179.984 29.226C179.84 29.382 179.768 29.574 179.768 29.802C179.768 30.006 179.828 30.18 179.948 30.324C180.068 30.468 180.23 30.6 180.434 30.72C180.638 30.828 180.872 30.924 181.136 31.008C181.4 31.08 181.676 31.14 181.964 31.188C182.624 31.32 183.218 31.494 183.746 31.71C184.286 31.926 184.748 32.19 185.132 32.502C185.528 32.814 185.828 33.186 186.032 33.618C186.248 34.038 186.356 34.53 186.356 35.094C186.356 35.97 186.14 36.714 185.708 37.326C185.288 37.926 184.706 38.388 183.962 38.712C183.23 39.024 182.384 39.18 181.424 39.18ZM194.38 39.18C193.432 39.18 192.556 39.024 191.752 38.712C190.96 38.388 190.27 37.938 189.682 37.362C189.094 36.774 188.638 36.084 188.314 35.292C188.002 34.488 187.846 33.606 187.846 32.646C187.846 31.71 188.014 30.846 188.35 30.054C188.686 29.262 189.148 28.578 189.736 28.002C190.336 27.414 191.038 26.958 191.842 26.634C192.658 26.31 193.546 26.148 194.506 26.148C195.106 26.148 195.694 26.226 196.27 26.382C196.846 26.538 197.38 26.772 197.872 27.084C198.376 27.384 198.808 27.744 199.168 28.164L197.296 30.306C197.044 30.042 196.774 29.814 196.486 29.622C196.21 29.418 195.904 29.262 195.568 29.154C195.232 29.046 194.872 28.992 194.488 28.992C194.008 28.992 193.552 29.082 193.12 29.262C192.7 29.43 192.328 29.676 192.004 30C191.692 30.312 191.446 30.696 191.266 31.152C191.086 31.608 190.996 32.118 190.996 32.682C190.996 33.234 191.086 33.738 191.266 34.194C191.446 34.638 191.698 35.022 192.022 35.346C192.346 35.67 192.736 35.916 193.192 36.084C193.66 36.252 194.176 36.336 194.74 36.336C195.124 36.336 195.49 36.282 195.838 36.174C196.186 36.066 196.504 35.922 196.792 35.742C197.092 35.55 197.356 35.334 197.584 35.094L199.06 37.434C198.76 37.77 198.358 38.07 197.854 38.334C197.362 38.598 196.81 38.808 196.198 38.964C195.598 39.108 194.992 39.18 194.38 39.18ZM206.896 39.18C205.936 39.18 205.06 39.018 204.268 38.694C203.476 38.37 202.786 37.914 202.198 37.326C201.61 36.738 201.154 36.048 200.83 35.256C200.506 34.464 200.344 33.594 200.344 32.646C200.344 31.698 200.506 30.828 200.83 30.036C201.154 29.244 201.61 28.554 202.198 27.966C202.786 27.378 203.476 26.922 204.268 26.598C205.06 26.274 205.93 26.112 206.878 26.112C207.826 26.112 208.696 26.274 209.488 26.598C210.28 26.922 210.97 27.378 211.558 27.966C212.146 28.554 212.596 29.244 212.908 30.036C213.232 30.828 213.394 31.698 213.394 32.646C213.394 33.582 213.232 34.452 212.908 35.256C212.596 36.048 212.146 36.738 211.558 37.326C210.97 37.914 210.28 38.37 209.488 38.694C208.696 39.018 207.832 39.18 206.896 39.18ZM206.878 36.3C207.37 36.3 207.82 36.21 208.228 36.03C208.648 35.85 209.008 35.598 209.308 35.274C209.62 34.938 209.86 34.548 210.028 34.104C210.196 33.66 210.28 33.174 210.28 32.646C210.28 32.118 210.196 31.632 210.028 31.188C209.86 30.744 209.62 30.36 209.308 30.036C209.008 29.7 208.648 29.442 208.228 29.262C207.82 29.082 207.37 28.992 206.878 28.992C206.386 28.992 205.93 29.082 205.51 29.262C205.102 29.442 204.742 29.7 204.43 30.036C204.118 30.36 203.878 30.744 203.71 31.188C203.554 31.632 203.476 32.118 203.476 32.646C203.476 33.174 203.554 33.666 203.71 34.122C203.878 34.566 204.118 34.95 204.43 35.274C204.742 35.598 205.102 35.85 205.51 36.03C205.93 36.21 206.386 36.3 206.878 36.3ZM215.762 39V26.4H221.432C222.236 26.4 222.962 26.574 223.61 26.922C224.27 27.27 224.786 27.75 225.158 28.362C225.53 28.962 225.716 29.646 225.716 30.414C225.716 31.206 225.53 31.92 225.158 32.556C224.786 33.18 224.276 33.672 223.628 34.032C222.98 34.392 222.248 34.572 221.432 34.572H218.678V39H215.762ZM222.746 39L219.542 33.312L222.674 32.862L226.238 39H222.746ZM218.678 32.232H221.162C221.474 32.232 221.744 32.166 221.972 32.034C222.212 31.89 222.392 31.692 222.512 31.44C222.644 31.188 222.71 30.9 222.71 30.576C222.71 30.252 222.638 29.97 222.494 29.73C222.35 29.478 222.14 29.286 221.864 29.154C221.6 29.022 221.276 28.956 220.892 28.956H218.678V32.232ZM228.4 39V26.4H233.674C234.598 26.4 235.444 26.556 236.212 26.868C236.98 27.168 237.64 27.6 238.192 28.164C238.756 28.728 239.188 29.394 239.488 30.162C239.788 30.93 239.938 31.776 239.938 32.7C239.938 33.624 239.788 34.476 239.488 35.256C239.188 36.024 238.756 36.69 238.192 37.254C237.64 37.806 236.98 38.238 236.212 38.55C235.444 38.85 234.598 39 233.674 39H228.4ZM231.46 36.912L231.046 36.3H233.584C234.088 36.3 234.538 36.216 234.934 36.048C235.33 35.868 235.666 35.622 235.942 35.31C236.23 34.998 236.452 34.62 236.608 34.176C236.764 33.732 236.842 33.24 236.842 32.7C236.842 32.16 236.764 31.668 236.608 31.224C236.452 30.78 236.23 30.402 235.942 30.09C235.666 29.778 235.33 29.538 234.934 29.37C234.538 29.19 234.088 29.1 233.584 29.1H230.992L231.46 28.524V36.912Z"
+                                        fill="white" />
+                                </g>
+                                <defs>
+                                    <filter id="filter0_b_1_410" x="-4" y="-4" width="288" height="72"
+                                        filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+                                        <feFlood flood-opacity="0" result="BackgroundImageFix" />
+                                        <feGaussianBlur in="BackgroundImageFix" stdDeviation="2" />
+                                        <feComposite in2="SourceAlpha" operator="in"
+                                            result="effect1_backgroundBlur_1_410" />
+                                        <feBlend mode="normal" in="SourceGraphic" in2="effect1_backgroundBlur_1_410"
+                                            result="shape" />
+                                    </filter>
+                                    <clipPath id="clip0_1_410">
+                                        <rect width="24" height="24" fill="white" transform="translate(24 20)" />
+                                    </clipPath>
+                                </defs>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- =====================footer===================== -->
+        <footer class="footer-bg text-white py-6 relative">
+            <div class="max-w-7xl px-[150px] pb-[127px] pt-[125px] flex justify-between flex-wrap mx-auto text-center">
+
+                <div class="">
+                    <p class="text-sm uppercase text-left font-bold hyper tracking-widest">Nakashi</p>
+                    <p class="text-xs leading-[15px] font-light  mt-1">COPYRIGHT © 2022. all rights reserved</p>
+                </div>
+                <a href="#">
+                    <img class=" mb-6 mx-auto" src="/assets/image/svg/back-to-top-sign.svg   " alt="">
+                    <p class="font-light text-xs leading-[15px] max-lg:hidden ">BACK TO TOP</p>
+                </a>
+                <div class="flex gap-4  justify-end xl:me-[-100px] xl:translate-x-[-100px] max-lg:hidden ">
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[17px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                            src="./assets/image/svg/tele.svg" alt="telegram icon"></a>
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[17px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                            src="./assets/image/svg/discord.svg" alt="telegram icon"></a>
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[17px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                            src="./assets/image/svg/twiter.svg" alt="telegram icon"></a>
+                    <a href="/"
+                        class="bg-[#1B1B1B] p-[17px] rounded-full hover:bg-[#403CFF] transition-all duration-300"><img
+                            src="./assets/image/svg/landmark.svg" alt="telegram icon"></a>
+                </div>
+            </div>
+        </footer>
+
+
+
+        <!-- ------accourdian------------ -->
+        <script>
+            const radioButtons = document.querySelectorAll('input[name="accordion"]');
+
+            radioButtons.forEach(radio => {
+                radio.addEventListener('change', () => {
+                    radioButtons.forEach(rb => {
+                        const icon = document.querySelector(`#icon${rb.id.replace('item', '')}`);
+                        if (rb.checked) {
+                            icon.style.transform = 'rotate(180deg)';
+                            icon.style.fill = 'blue';
+                        } else {
+                            icon.style.transform = 'rotate(0deg)';
+                            icon.style.fill = 'white';
+                        }
+                    });
+                });
+            });
+            document.querySelector('input[name="accordion"]:checked').dispatchEvent(new Event('change'));</script>
+
+        </script>
+        <!-- -----navbar----------- -->
+
+        <script>
+            const menubar = document.querySelector('.menubar');
+            const menuList = document.querySelector('.menulist');
+            menubar.addEventListener('click', () => {
+                menuList.classList.toggle('-right-full');
+                menuList.classList.toggle('right-0');
+            });
+        </script>
+
+    </body>
+
+</html>
